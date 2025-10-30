@@ -1,0 +1,205 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fellowship — Recherchen und Ressourcen</title>
+    <meta name="description" content="Alles, was ich über Fellowship herausgefunden habe: Hintergründe, Quellen, Medien und Notizen." />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="light">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">Fellowship</a>
+            <nav class="nav">
+                <a href="#overview">Überblick</a>
+                <a href="#deep-dive">Deep Dive</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#media">Medien</a>
+                <a href="#resources">Quellen</a>
+            </nav>
+            <div class="header-actions">
+                <button id="toggle-theme" class="btn ghost" aria-pressed="false">🌙</button>
+                <button class="btn primary" id="share-btn">Teilen</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="overview">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Fellowship</h1>
+                    <p class="lead">Eine umfassende Sammlung von Fakten, Analysen, Zeitstrahl und Medien — organisiert, kuratiert und jederzeit erweiterbar.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#deep-dive">Zum Deep Dive</a>
+                        <a class="btn ghost" href="#resources">Quellen & Downloads</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="stat-grid">
+                        <div class="stat">
+                            <div class="num">120+</div>
+                            <div class="label">Einträge</div>
+                        </div>
+                        <div class="stat">
+                            <div class="num">30</div>
+                            <div class="label">Medien</div>
+                        </div>
+                        <div class="stat">
+                            <div class="num">10</div>
+                            <div class="label">Quellen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Two-column content: Highlights + quick links -->
+        <section class="container highlights-grid">
+            <aside class="card quick-links" aria-labelledby="quick-title">
+                <h3 id="quick-title">Schnellzugriff</h3>
+                <ul>
+                    <li><a href="#summary-card-1">Kernaussagen</a></li>
+                    <li><a href="#timeline">Chronologie</a></li>
+                    <li><a href="#media">Bilder & Video</a></li>
+                    <li><a href="#notes">Persönliche Notizen</a></li>
+                </ul>
+            </aside>
+
+            <div class="card feature" id="deep-dive">
+                <h3>Deep Dive</h3>
+                <p>Platziere hier deine ausführlichen Kapitel. Nutze die Abschnitte unten als Vorlage: Kontext, Hauptthesen, Belege, offene Fragen.</p>
+
+                <div class="tabs" role="tablist" aria-label="Deep Dive Tabs">
+                    <button class="tab active" data-tab="context" role="tab" aria-selected="true">Kontext</button>
+                    <button class="tab" data-tab="arguments" role="tab">Thesen</button>
+                    <button class="tab" data-tab="evidence" role="tab">Belege</button>
+                </div>
+
+                <div class="tab-panels">
+                    <div class="tab-panel active" id="context">
+                        <h4>Kontext</h4>
+                        <p>Hier kommt dein einführender Text mit Hintergrundinformationen.</p>
+                    </div>
+                    <div class="tab-panel" id="arguments">
+                        <h4>Thesen</h4>
+                        <ul>
+                            <li><strong>These 1:</strong> Kurzbeschreibung.</li>
+                            <li><strong>These 2:</strong> Kurzbeschreibung.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="evidence">
+                        <h4>Belege</h4>
+                        <p>Liste der wichtigsten Quellen, Zitate, und Links.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Timeline -->
+        <section class="container" id="timeline">
+            <h2 class="section-title">Zeitstrahl</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <time class="t-time">Datum / Jahr</time>
+                    <div class="t-body">
+                        <h4>Wichtiges Ereignis</h4>
+                        <p>Kompakte Beschreibung des Ereignisses und warum es relevant ist.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <time class="t-time">Datum / Jahr</time>
+                    <div class="t-body">
+                        <h4>Wichtiges Ereignis</h4>
+                        <p>Noch eine Beschreibung; ersetze mit deinen Inhalten.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Media gallery -->
+        <section class="container" id="media">
+            <h2 class="section-title">Medien</h2>
+            <p class="muted">Galerie mit Bildern, Karten oder eingebetteten Videos.</p>
+            <div class="gallery-grid">
+                <figure class="media-card">
+                    <img src="assets/images/placeholder-1.jpg" alt="Placeholder 1" />
+                    <figcaption>Bildbeschreibung oder Quelle</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="assets/images/placeholder-2.jpg" alt="Placeholder 2" />
+                    <figcaption>Bildbeschreibung oder Quelle</figcaption>
+                </figure>
+                <figure class="media-card">
+                    <img src="assets/images/placeholder-3.jpg" alt="Placeholder 3" />
+                    <figcaption>Bildbeschreibung oder Quelle</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Resources -->
+        <section class="container" id="resources">
+            <h2 class="section-title">Quellen und Materialien</h2>
+            <div class="resources-grid">
+                <div class="resource card">
+                    <h4>Artikel / Webseite</h4>
+                    <p class="muted">Kurzer Kommentar zur Relevanz</p>
+                    <a class="link" href="#" target="_blank" rel="noopener">Zur Quelle</a>
+                </div>
+                <div class="resource card">
+                    <h4>PDF / Studie</h4>
+                    <p class="muted">Kurzer Kommentar</p>
+                    <a class="link" href="#" target="_blank" rel="noopener">Download</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <!-- Notes and contact -->
+        <section class="container" id="notes">
+            <div class="card notes">
+                <h3>Persönliche Notizen</h3>
+                <textarea id="notes-input" placeholder="Deine Notizen..."></textarea>
+                <div class="notes-actions">
+                    <button id="save-notes" class="btn primary">Lokal speichern</button>
+                    <button id="clear-notes" class="btn ghost">Löschen</button>
+                </div>
+            </div>
+
+            <aside class="card contact" id="contact">
+                <h3>Kontakt & Feedback</h3>
+                <p class="muted">Sag deinen Freunden, wie sie Ergänzungen vorschlagen können.</p>
+                <div class="contact-list">
+                    <p><strong>E-Mail:</strong> deine@email.de</p>
+                    <p><strong>GitHub:</strong> <a href="#" target="_blank">@deinuser</a></p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Created with ❤️ — Inhalte: Chris</p>
+            <nav class="footer-nav">
+                <a href="#overview">Top</a>
+                <a href="#resources">Quellen</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
