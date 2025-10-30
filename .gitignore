@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/bockholf.github.io/config
+/.vs/bockholf.github.io/CopilotIndices/17.14.1290.42047
+/.vs/bockholf.github.io/FileContentIndex
+/.vs/bockholf.github.io/v17/.wsuo
+/.vs/bockholf.github.io/v17/DocumentLayout.backup.json
+/.vs/bockholf.github.io/v17/DocumentLayout.json
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json

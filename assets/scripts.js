@@ -53,3 +53,14 @@ if (shareBtn) {
         }
     });
 }
+
+// simple local date fill or future helpers
+document.addEventListener('DOMContentLoaded', () => {
+    // Beispiel: Datum in Footer automatisch einfügen, falls Platzhalter vorhanden
+    const footer = document.querySelector('footer.container');
+    if (footer && footer.textContent.includes('Letzte Änderung:')) {
+        const date = new Date().toLocaleDateString('de-DE');
+        footer.innerHTML = footer.innerHTML.replace('<!-- Datum eintragen -->', date);
+    }
+});
+
